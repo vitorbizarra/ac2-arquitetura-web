@@ -1,6 +1,7 @@
 package com.example.ac2.models;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -36,4 +37,6 @@ public class Projeto {
     @Column(nullable = false)
     @NonNull
     private LocalDate dataFim;
+
+    private List<Funcionario> functionarios;
 }
